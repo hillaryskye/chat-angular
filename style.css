@@ -1,0 +1,32 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+main {
+/*   float: left;
+ */  display: block;
+/*   width: 45%;
+ */
+}
+.float {
+  float: left;
+  display: block;
+}
+
+.post {
+  display: inline-block;
+    background: #F8F6F8;
+    border: 1px solid grey;
+    padding: 10px;
+    margin: 10px 20px;
+    float: left;
+    color: #605F60;
+    width: 30%;
+}
+.wrapper:first-child {
+  display: block;
+}
+p {
+  float: left;
+  display: block;
+  padding-left: 20px;
+}

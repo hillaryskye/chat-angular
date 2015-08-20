@@ -1,0 +1,20 @@
+<main>
+
+  <h1>Home Page with Chat App</h1>
+  <form class="comment-form" name="chatForm">
+    <label for="name"></label>
+      <input type="text" id="name" ng-model="name" placeholder="Enter your name">
+    <label for="content"></label>
+      <input type="text" id="content" ng-model="content" placeholder="Enter your content">
+    <button type="submit" ng-click="addChat(name,content)">Submit</button>
+  </form>
+
+<div class="wrapper">
+
+  <article class="post" ng-repeat="result in results.data track by $index">
+    <p>{{result.content}}</p>
+    <p>By: {{result.name}}</p>
+  </article>
+</div>
+
+ </main>
